@@ -3,12 +3,27 @@ import { Target, Heart, Handshake, Award } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Mission Statement with smooth entrance */}
+        <div className="text-center mb-12 opacity-0 animate-fade-in-up">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Our <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">Mission</span>
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              We strengthen the bonds between Austria and Mongolia through meaningful business partnerships, 
+              cultural understanding, and academic excellence. As a trusted bridge between two nations, 
+              we facilitate connections that drive economic growth, foster innovation, and promote mutual respect.
+            </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-blue-600 mx-auto rounded-full"></div>
+          </div>
+        </div>
+
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             About <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">AMBA</span>
-          </h2>
+          </h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Founded on the principles of mutual respect and shared prosperity, AMBA serves as the premier platform for Austrian-Mongolian collaboration.
           </p>
